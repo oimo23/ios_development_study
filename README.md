@@ -59,7 +59,7 @@ Optional型から値を取り出すときにはUnwrapという作業が必要に
 イベントが発生したときに、誰に処理を任せるかという指定？？  
 まだいまいちシックリ来ていない  
 
-- protocolとは？  
+-protocolとは？  
 classやstructがどんな関数や変数持ってるか指定するもの？
 普通の変数に対して型が指定されるのに対して、classやstructにはprotocolを指定してやるという事か？
 
@@ -125,13 +125,12 @@ optionalの安全なunwrapは guard let unwrapped = mayOptional else { return } 
 ![イメージ](https://user-images.githubusercontent.com/18276888/64484545-9de7b180-d24e-11e9-946e-c4e23be1a321.GIF)  
 本当にテキストと画像が出るだけ  
 
-- 得た知識
+-得た知識
 ・アイコンの設定の仕方  
 ・アイコンは解像度別に何種類か用意してあげないといけないこと  
 ・(appicon generator)[https://appicon.co/]というサイトがアイコン作るのに便利だということ  
 ・StoryBoardを使うとPhotoshopとかみたいにGUIでTextやImageを簡単に配置出来た  
-・SEでビルドしたら、左上がクロッピングされた感じになった →
- AutoLayoutをとりあえず良いと知った  
+・SEでビルドしたら、左上がクロッピングされた感じになった ➡︎ AutoLayoutを使えばとりあえず良いと知った  
 
 
 ## クイズアプリを作った
