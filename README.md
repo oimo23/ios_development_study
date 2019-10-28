@@ -1,4 +1,15 @@
-# ios開発/Swift に関して勉強した記録
+# iOS開発/Swift に関して勉強した記録
+
+iOS開発/Swiftについて勉強した記録をするリポジトリです。
+以下のドキュメントは時系列順ではなく、勉強カテゴリ別です。  
+    
+・Repl.itというオンラインエディタ上で実験したこと  
+・AtcoderのAB問題を50問解いて文法の練習をしたこと
+・Xcode上でプロジェクトを作ったこと  
+・上の2つの中などで、つまづいたところとそれに対する自分なりの理解  
+・今後勉強したいこと
+    
+という構成です。
 
 ## 基礎的な文法をRepl.it上で勉強
 手軽にSwiftを動かせる環境として、Playgroundも良かったが共有も簡単な [Repl.it](https://repl.it/) というオンライン上で使えるエディタのWebサービスを活用した
@@ -33,6 +44,47 @@ https://repl.it/@oimo23/Structtoha
 
 #### :white_check_mark: optional型について  
 https://repl.it/@oimo23/Optionaltoha
+
+### Struct
+https://repl.it/@oimo23/Structtoha
+
+### :white_check_mark: ClassとEnum
+https://repl.it/@oimo23/ClasstoEnum
+
+### 循環参照とメモリリーク
+https://repl.it/@oimo23/Xun-Huan-Can-Zhao-tomemoririku
+
+### ProtocolでのExtensionによるデフォルト実装
+https://repl.it/@oimo23/ProtocolnoextensionwoLi-Yong-sitadehuorutoShi-Zhuang-nituite
+
+## AtcoderのAB問題を50問解いて体に馴染ませてみた
+プログラミング言語の文法を体に身に付かせるのはAtCoderのAB問題をやるのが一番良いと思った経験からやってみた
+   
+[そのリポジトリ](https://github.com/oimo23/Atcoder_Swift)
+
+#### :white_check_mark: 得られたこと  
+1で学んだことが体に馴染んだ  
+
+#### :white_check_mark: 新たに気付いたこと  
+0除算をするとバグる  
+配列に対するmax()など　返り値がoptionalなやつがあるので注意しないといけない    
+optionalの安全なunwrapは guard let unwrapped = mayOptional else { return }    でやる？
+
+## Xcodeでのアプリ開発
+### Hello Worldアプリを作った
+![イメージ](https://user-images.githubusercontent.com/18276888/64484545-9de7b180-d24e-11e9-946e-c4e23be1a321.GIF)  
+本当にテキストと画像が出るだけ  
+
+#### :white_check_mark: 得た知識  
+・アイコンの設定の仕方  
+・アイコンは解像度別に何種類か用意してあげないといけないこと  
+・(appicon generator)[https://appicon.co/]というサイトがアイコン作るのに便利だということ  
+・StoryBoardを使うとPhotoshopとかみたいにGUIでTextやImageを簡単に配置出来た  
+・SEでビルドしたら、左上がクロッピングされた感じになった ➡︎ AutoLayoutを使えばとりあえず良いと知った  
+
+
+### クイズアプリを作った
+![イメージ 2](https://user-images.githubusercontent.com/18276888/64484552-a04a0b80-d24e-11e9-8cc3-19da51a97163.GIF)  
 
 ## 分からないと思った所と自分なりの答え
 #### :question: Optional型  
@@ -94,35 +146,6 @@ numberThreeTimes(2) // これで良くなる
 
 #### :question: classの前の final ってなに？  
 finalをつけるとそのクラスは継承されないことが保証されるらしい  
-
-## 2.AtcoderのAB問題を50問解いて体に馴染ませてみた
-プログラミング言語の文法を体に身に付かせるのはAtCoderのAB問題をやるのが一番良いと思った経験からやってみた
-   
-[そのリポジトリ](https://github.com/oimo23/Atcoder_Swift)
-
-#### :white_check_mark: 得られたこと  
-1で学んだことが体に馴染んだ  
-
-#### :white_check_mark: 新たに気付いたこと  
-0除算をするとバグる  
-配列に対するmax()など　返り値がoptionalなやつがあるので注意しないといけない    
-optionalの安全なunwrapは guard let unwrapped = mayOptional else { return }    でやる？
-
-
-## Hello Worldアプリを作った
-![イメージ](https://user-images.githubusercontent.com/18276888/64484545-9de7b180-d24e-11e9-946e-c4e23be1a321.GIF)  
-本当にテキストと画像が出るだけ  
-
-#### :white_check_mark: 得た知識  
-・アイコンの設定の仕方  
-・アイコンは解像度別に何種類か用意してあげないといけないこと  
-・(appicon generator)[https://appicon.co/]というサイトがアイコン作るのに便利だということ  
-・StoryBoardを使うとPhotoshopとかみたいにGUIでTextやImageを簡単に配置出来た  
-・SEでビルドしたら、左上がクロッピングされた感じになった ➡︎ AutoLayoutを使えばとりあえず良いと知った  
-
-
-## クイズアプリを作った
-![イメージ 2](https://user-images.githubusercontent.com/18276888/64484552-a04a0b80-d24e-11e9-8cc3-19da51a97163.GIF)  
 
 
 ## これから頑張りたいこと
