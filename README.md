@@ -56,7 +56,7 @@ https://repl.it/@oimo23/ClasstoEnum
 ### :white_check_mark: 循環参照とメモリリーク
 https://repl.it/@oimo23/Xun-Huan-Can-Zhao-tomemoririku
 
-### ProtocolでのExtensionによるデフォルト実装
+### :white_check_mark: ProtocolでのExtensionによるデフォルト実装
 https://repl.it/@oimo23/ProtocolnoextensionwoLi-Yong-sitadehuorutoShi-Zhuang-nituite
 
     
@@ -66,7 +66,7 @@ https://repl.it/@oimo23/ProtocolnoextensionwoLi-Yong-sitadehuorutoShi-Zhuang-nit
 [そのリポジトリ](https://github.com/oimo23/Atcoder_Swift)
 
 #### :white_check_mark: 得られたこと  
-1で学んだことが体に馴染んだ  
+Repl.itで学んだことが体に馴染んだ  
 
 #### :white_check_mark: 新たに気付いたこと  
 0除算をするとバグる  
