@@ -141,10 +141,6 @@ classやstructがどんな関数や変数持ってるか指定するものだと
 
 #### :question: guardってなに？  
 Optional型の安全なunwrapの時に使うものと理解した  
- 
-#### :question: 型じゃなくて、変数の後ろに?や!が付いてるのは何？  
-!はOptionalの強制アンラップだけど、  
-?はOptionalをアンラップはしないけど、
 
 #### :question: cocoapodsってなに？  
 パッケージ管理をしてくれる  
