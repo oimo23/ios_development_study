@@ -20,14 +20,15 @@ iOS開発/Swiftについて勉強した記録をするリポジトリです。
 ・今後勉強したいこと  
     
 という構成です。
-
+    
+    
 ## 基礎的な文法をRepl.it上で勉強
-手軽にSwiftを動かせる環境として、Playgroundも良かったが共有も簡単な [Repl.it](https://repl.it/) というオンライン上で使えるエディタのWebサービスを活用した
-
-### 目的別にググって出てくる記事を見ながらrepl.it上で手を動かして確認した
 <p align="center">
   <img src="https://user-images.githubusercontent.com/18276888/67656472-3b31ad00-f997-11e9-9f9a-048a6ad7beac.png">
 </p>
+手軽にSwiftを動かせる環境として、Playgroundも良かったが共有も簡単な [Repl.it](https://repl.it/) というオンライン上で使えるエディタのWebサービスを活用した
+
+### 目的別にググって出てくる記事を見ながらrepl.it上で手を動かして確認した
 下記に文法名とリンク先に実際書いて勉強したコード  
 
 #### :white_check_mark: 変数/定数宣言  
@@ -74,7 +75,7 @@ https://repl.it/@oimo23/Protocoltoha
 
 ### :white_check_mark: ProtocolでのExtensionによるデフォルト実装
 https://repl.it/@oimo23/ProtocolnoextensionwoLi-Yong-sitadehuorutoShi-Zhuang-nituite
-
+    
     
 ## AtcoderのAB問題を50問解いて体に馴染ませてみた
 <p align="center">
