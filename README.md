@@ -1,9 +1,17 @@
-# :iphone: iOS開発/Swift に関して勉強した記録
+<h1 align="center">:iphone: iOS開発/Swift に関して勉強した記録</h1>
+<p align="center">
+  <a href="http://makeapullrequest.com">
+    <img src="https://img.shields.io/badge/Author-oimo23-brightgreen.svg?style=flat-square" alt="Author oimo23">
+  </a>
+</p>
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/18276888/67656087-2274c780-f996-11e9-9e1e-5605a5a48256.jpg" width="250">
+</p>
 
 iOS開発/Swiftについて勉強した記録をするリポジトリです。  
 以下のドキュメントは時系列順ではなく、勉強カテゴリ別です。  
     
-・Repl.itというオンラインエディタ上で実験した
+・Repl.itというオンラインエディタ上で実験した  
 ・AtcoderのAB問題を50問解いて文法の練習をした  
 ・Xcode上でプロジェクトを作った  
 ・プロのコードレビューを受けた  
@@ -17,7 +25,9 @@ iOS開発/Swiftについて勉強した記録をするリポジトリです。
 手軽にSwiftを動かせる環境として、Playgroundも良かったが共有も簡単な [Repl.it](https://repl.it/) というオンライン上で使えるエディタのWebサービスを活用した
 
 ### 目的別にググって出てくる記事を見ながらrepl.it上で手を動かして確認した
-
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/18276888/67656472-3b31ad00-f997-11e9-9f9a-048a6ad7beac.png">
+</p>
 下記に文法名とリンク先に実際書いて勉強したコード  
 
 #### :white_check_mark: 変数/定数宣言  
@@ -53,14 +63,23 @@ https://repl.it/@oimo23/Structtoha
 ### :white_check_mark: ClassとEnum
 https://repl.it/@oimo23/ClasstoEnum
 
+### :white_check_mark: Exteinsion
+https://repl.it/@oimo23/extensiontoha
+
 ### :white_check_mark: 循環参照とメモリリーク
 https://repl.it/@oimo23/Xun-Huan-Can-Zhao-tomemoririku
+
+### :white_check_mark: Protocolとは
+https://repl.it/@oimo23/Protocoltoha
 
 ### :white_check_mark: ProtocolでのExtensionによるデフォルト実装
 https://repl.it/@oimo23/ProtocolnoextensionwoLi-Yong-sitadehuorutoShi-Zhuang-nituite
 
     
 ## AtcoderのAB問題を50問解いて体に馴染ませてみた
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/18276888/67656575-877ced00-f997-11e9-879b-6c34d818e034.png">
+</p>
 プログラミング言語の文法を体に身に付かせるのはAtCoderのAB問題をやるのが一番良いと思った経験からやってみた
    
 [そのリポジトリ](https://github.com/oimo23/Atcoder_Swift)
@@ -91,10 +110,14 @@ optionalの安全なunwrapは guard let unwrapped = mayOptional else { return } 
 ![イメージ 2](https://user-images.githubusercontent.com/18276888/64484552-a04a0b80-d24e-11e9-8cc3-19da51a97163.GIF)  
 
 ### おみくじアプリを作った
+[そのリポジトリ](https://github.com/oimo23/Atcoder_Swift)
 
 ### お天気アプリを作った
+[そのリポジトリ](https://github.com/oimo23/Atcoder_Swift)
 
 ### Todoアプリを作った
+[そのリポジトリ](https://github.com/oimo23/Atcoder_Swift)
+
 
 ## プロのコードレビューを受けた
 あるサービスで現場で開発しているiOS開発者にコードレビューを受けた。  
