@@ -1,12 +1,14 @@
-# iOS開発/Swift に関して勉強した記録
+# :iphone: iOS開発/Swift に関して勉強した記録
 
-iOS開発/Swiftについて勉強した記録をするリポジトリです。
+iOS開発/Swiftについて勉強した記録をするリポジトリです。  
 以下のドキュメントは時系列順ではなく、勉強カテゴリ別です。  
     
 ・Repl.itというオンラインエディタ上で実験したこと  
-・AtcoderのAB問題を50問解いて文法の練習をしたこと
+・AtcoderのAB問題を50問解いて文法の練習をしたこと  
 ・Xcode上でプロジェクトを作ったこと  
-・上の2つの中などで、つまづいたところとそれに対する自分なりの理解  
+・プロのコードレビューを受けたこと
+・アプリストアに自作アプリを公開したこと
+・上の中には書いていない、勉強の中でつまづいたところとそれに対する自分なりの理解  
 ・今後勉強したいこと
     
 という構成です。
@@ -45,18 +47,19 @@ https://repl.it/@oimo23/Structtoha
 #### :white_check_mark: optional型について  
 https://repl.it/@oimo23/Optionaltoha
 
-### Struct
+### :white_check_mark: Struct
 https://repl.it/@oimo23/Structtoha
 
 ### :white_check_mark: ClassとEnum
 https://repl.it/@oimo23/ClasstoEnum
 
-### 循環参照とメモリリーク
+### :white_check_mark: 循環参照とメモリリーク
 https://repl.it/@oimo23/Xun-Huan-Can-Zhao-tomemoririku
 
 ### ProtocolでのExtensionによるデフォルト実装
 https://repl.it/@oimo23/ProtocolnoextensionwoLi-Yong-sitadehuorutoShi-Zhuang-nituite
 
+    
 ## AtcoderのAB問題を50問解いて体に馴染ませてみた
 プログラミング言語の文法を体に身に付かせるのはAtCoderのAB問題をやるのが一番良いと思った経験からやってみた
    
@@ -70,6 +73,7 @@ https://repl.it/@oimo23/ProtocolnoextensionwoLi-Yong-sitadehuorutoShi-Zhuang-nit
 配列に対するmax()など　返り値がoptionalなやつがあるので注意しないといけない    
 optionalの安全なunwrapは guard let unwrapped = mayOptional else { return }    でやる？
 
+    
 ## Xcodeでのアプリ開発
 ### Hello Worldアプリを作った
 ![イメージ](https://user-images.githubusercontent.com/18276888/64484545-9de7b180-d24e-11e9-946e-c4e23be1a321.GIF)  
@@ -86,7 +90,25 @@ optionalの安全なunwrapは guard let unwrapped = mayOptional else { return } 
 ### クイズアプリを作った
 ![イメージ 2](https://user-images.githubusercontent.com/18276888/64484552-a04a0b80-d24e-11e9-8cc3-19da51a97163.GIF)  
 
-## 分からないと思った所と自分なりの答え
+### おみくじアプリを作った
+
+### お天気アプリを作った
+
+### Todoアプリを作った
+
+## プロのコードレビューを受けた
+あるサービスで現場で開発しているiOS開発者にコードレビューを受けた。  
+有償でやってもらったので、詳細はこのリポジトリには記述しないが、大まかに
+    
+・JSONのデコードは自分はSwiftyJSONを使っていたが、JSONDecoderを使うのが一般的ということ  
+・プロジェクト全体で使うConstantな値の管理は、Singletonパターンを適用すると良い  
+・クロージャ内のselfは[weak self]で弱参照にしないと循環参照になる  
+・メインスレッド以外で画面更新を行おうとすると失敗するかクラッシュする  
+・自分が書いていたAPIClientモデルの書き方の改善例  
+   
+などの知見を得ることが出来た。  
+
+## iOS開発 / Swift の勉強でつまづいた所と自分なりの答え
 #### :question: Optional型  
 Swift特有でとっつき辛かった  
 nil (null) が入っているかもしれない型のこと  
@@ -97,41 +119,40 @@ StringとString?は型としては完全に別のもの
 Optional型から値を取り出すときにはUnwrapという作業が必要になる  
 
 #### :question: 強参照、弱参照  
-よく分からない  
-強参照だとメモリが解放されず無駄遣いになるという事があるのでなるべく弱参照が良いということだけは何となく分かった  
+最初はまったく理解出来なかったが、何回もググったり、Repl上で実験したりコードレビューを受けて少し理解出来た。  
+循環参照によるメモリリークを防ぐために、弱参照を使用するのだと理解した。  
+クロージャが絡むと出てくる気がする。  
 
-#### :question: delegateって結局なに？  
-委譲するとかいう意味らしい  
-イベントが発生したときに、誰に処理を任せるかという指定？？  
-まだいまいちシックリ来ていない  
+#### :question: Delegate  
+delegateはかなり理解に苦しんだけど、実は単にUITextFieldなどのクラスが持っているプロパティ名だと思う。  
+何かイベントを起きたことを通知してUIViewController側でそれを利用して処理をしたいときに、delegateにUIViewControllerを指定しないと使えない。    
+そしてUIViewController自身もUITextFieldDelegateに準拠していなければいけないということだと思う。  
 
-#### :question: protocolとは？  
-classやstructがどんな関数や変数持ってるか指定するもの？
-普通の変数に対して型が指定されるのに対して、classやstructにはprotocolを指定してやるという事か？
+#### :question: Protocol
+classやstructがどんな関数や変数持ってるか指定するものだと理解した。  
+普通の変数に対して型が指定されるのに対して、classやstructにはprotocolを指定してやるという事だろうか。  
+    
+単にふるまいを定義するだけでなく、デフォルト実装というものも指定出来ると後から知った。  
 
-#### :question: lazyってなに？  
-参照されるとき初めて初期値が設定される  
-メモリの節約のため？ 画像で言うところ必要な時まで読みこまない lazy load 的な発想から lazy って名前なのか？
+#### :question: Lazy
+参照されるとき初めて初期値が設定されるらしい  
+メモリの節約のため？ 画像で言うところ必要な時まで読みこまない lazy load 的な発想から lazy って名前なのだろうか？  
+正直よく分かっていない   
 
 #### :question: guardってなに？  
-よく分からなかったが、
 Optional型の安全なunwrapの時に使うものと理解した  
  
 #### :question: 型じゃなくて、変数の後ろに?や!が付いてるのは何？  
-!はOptionalの強制アンラップ
-?はなに...?
-
-#### :question: 配列のあとに()付いているのは何？  
-var list = [Question]()  
-分からない  
+!はOptionalの強制アンラップだけど、  
+?はOptionalをアンラップはしないけど、
 
 #### :question: cocoapodsってなに？  
-パッケージ管理をしてくれる
-多分npmみたいなもの  
+パッケージ管理をしてくれる  
+npmみたいなもの   
 
 pod init でファイルが出来て、そこに必要なパッケージの名前を書いて cocoapod install すると入れてくれる  
     
-ファイル内で「import ○○」と書くと使えるようになる
+ファイル内で「import ○○」と書くと使えるようになる  
 
 #### :question: 関数の引数のところに付いているアンダースコア(_)は何？  
 _ をつけると引数名を省略出来るらしい
@@ -142,12 +163,12 @@ func numberThreeTimes(_ num: Int) -> Int {
 numberThreeTimes(2) // これで良くなる
 
 #### :question: xcodeproj xcworkspaceの違い  
-まだよく分かっていない
+よく分かっていない  
+cocoapodを使うとxcworkspaceで開く必要があるようだ  
 
 #### :question: classの前の final ってなに？  
 finalをつけるとそのクラスは継承されないことが保証されるらしい  
-
-
+    
 ## これから頑張りたいこと
 -RxSwift
 
