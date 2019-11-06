@@ -112,13 +112,16 @@ optionalの安全なunwrapは guard let unwrapped = mayOptional else { return } 
 ![イメージ 2](https://user-images.githubusercontent.com/18276888/64484552-a04a0b80-d24e-11e9-8cc3-19da51a97163.GIF)  
 
 ### おみくじアプリを作った
-[そのリポジトリ](https://github.com/oimo23/Atcoder_Swift)
+![イメージ 3](https://user-images.githubusercontent.com/18276888/65624508-05e71780-e005-11e9-85d5-635427e8a696.GIF)  
+[そのリポジトリ](https://github.com/oimo23/Omikuji)
 
 ### お天気アプリを作った
-[そのリポジトリ](https://github.com/oimo23/Atcoder_Swift)
+![イメージ 3](https://user-images.githubusercontent.com/18276888/65624508-05e71780-e005-11e9-85d5-635427e8a696.GIF)  
+[そのリポジトリ](https://github.com/oimo23/oTenki)
 
 ### Todoアプリを作った
-[そのリポジトリ](https://github.com/oimo23/Atcoder_Swift)
+![イメージ 3](https://user-images.githubusercontent.com/18276888/65648805-cdfcc600-e03e-11e9-8790-bf8e29beeca6.GIF)  
+[そのリポジトリ](https://github.com/oimo23/Todo)
 
 
 ## プロのコードレビューを受けた
