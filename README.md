@@ -112,7 +112,7 @@ optionalの安全なunwrapは guard let unwrapped = mayOptional else { return } 
 ![イメージ 2](https://user-images.githubusercontent.com/18276888/64484552-a04a0b80-d24e-11e9-8cc3-19da51a97163.GIF)  
 
 ### おみくじアプリを作った
-![イメージ 3](https://user-images.githubusercontent.com/18276888/65624508-05e71780-e005-11e9-85d5-635427e8a696.GIF)  
+![イメージ 3](https://user-images.githubusercontent.com/18276888/68604662-54d20900-04ee-11ea-82ac-84b4ac6a85ef.GIF)  
 [そのリポジトリ](https://github.com/oimo23/Omikuji)
 
 ### お天気アプリを作った
