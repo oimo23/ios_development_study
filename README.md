@@ -115,14 +115,29 @@ optionalの安全なunwrapは guard let unwrapped = mayOptional else { return } 
 ![イメージ 3](https://user-images.githubusercontent.com/18276888/68604662-54d20900-04ee-11ea-82ac-84b4ac6a85ef.GIF)  
 [そのリポジトリ](https://github.com/oimo23/Omikuji)
 
+#### :white_check_mark: 得た知識  
+・CocoaPodsの使い方、またそれを利用したサードパーティのライブラリの使い方を知った
+・SwiftLintの使い方を知った  
+・MVC、MVPのディレクトリ構造　設計の仕方を自分なりにだが解釈できた  
+・XCTestを用いたユニットテストのやり方を知った
+
 ### お天気アプリを作った
 ![イメージ 3](https://user-images.githubusercontent.com/18276888/65624508-05e71780-e005-11e9-85d5-635427e8a696.GIF)  
 [そのリポジトリ](https://github.com/oimo23/oTenki)
+
+#### :white_check_mark: 得た知識  
+・Alamofireを使ってAPIを叩く方法を知った  
+・APIから貰ったJSONを整形して画面上に表示する流れを知った  
+・CoreLocationで位置情報を利用する方法を知った  
+・Delegateの使い方を知った  
 
 ### Todoアプリを作った
 ![イメージ 3](https://user-images.githubusercontent.com/18276888/65648805-cdfcc600-e03e-11e9-8790-bf8e29beeca6.GIF)  
 [そのリポジトリ](https://github.com/oimo23/Todo)
 
+#### :white_check_mark: 得た知識  
+・Realmを使ってローカルにデータを永続化する方法を知った  
+・テーブルの使い方を知った  
 
 ## プロのコードレビューを受けた
 あるサービスで現場で開発しているiOS開発者にコードレビューを受けた。  
