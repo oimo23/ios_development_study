@@ -151,10 +151,6 @@ optionalの安全なunwrapは guard let unwrapped = mayOptional else { return } 
    
 などの知見を得ることが出来た。  
 
-## Bitriseを使ってみた
-GitHubのリポジトリと連携して、指定したブランチにpushがあったらBitrise側で設定したWorkflowを実行するやり方を知った。  
-色々出来るみたいが、とりあえずTestの実行を覚えた。
-
 ## App Storeにアプリを公開した
 [フリマプリ便利計算機](https://apps.apple.com/us/app/%E3%83%95%E3%83%AA%E3%83%9E%E3%82%A2%E3%83%97%E3%83%AA%E4%BE%BF%E5%88%A9%E8%A8%88%E7%AE%97%E6%A9%9F/id1482937342?ign-mpt=uo%3D4)
     
@@ -167,6 +163,12 @@ GitHubのリポジトリと連携して、指定したブランチにpushがあ�
 ・リリース時の情報記入の方法   
 
 など実際にリリースする流れを掴むことが出来た    
+
+## Bitriseを使ってみた
+GitHubのリポジトリと連携して、指定したブランチにpushがあったらBitrise側で設定したWorkflowを実行するやり方を知った。  
+Testの実行と、プロジェクトのアーカイブ、iTunes Connectへのデプロイまで自動化出来た。  
+     
+基本的なBitriseの知識不足、証明書関係のエラーが出まくり、１週間くらいハマってアプリ自体の開発より辛かった。  
 
 ## iOS開発 / Swift の勉強でつまづいた所と自分なりの答え
 #### :question: Optional型  
